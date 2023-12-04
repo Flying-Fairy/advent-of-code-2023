@@ -23,7 +23,6 @@ with open("inputs/input4.txt") as f:
             for n in range(1, ticket_score + 1):
                 ticket_counter[game + n] += 1 * ticket_counter[game]
 
-       
 for n in ticket_counter.values():
     total_2 += n
 
