@@ -65,9 +65,8 @@ for row in seed_map:
                 seed_ranges.append((l, source))
                 seed_ranges.append((max_range, r))
                 break
-        else:    
-            new.append((l, r))
-    
+            
+    new.append((l, r))
     seed_ranges = new
 
 print("part 2:", sorted(seed_ranges)[0][0])
