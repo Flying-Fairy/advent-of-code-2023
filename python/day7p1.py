@@ -1,6 +1,5 @@
 from collections import Counter, defaultdict
 
-hands_list = []
 hands_dict = defaultdict(list)
 card_score = {"T": "10", "J": "11", "Q": "12", "K": "13", "A": "14"}
 
