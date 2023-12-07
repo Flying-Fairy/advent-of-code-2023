@@ -9,7 +9,7 @@ with open("inputs/input7.txt") as f:
         hand, bid = line.split()
         joker_hand = hand
         
-        if "J" in joker_hand and hand != "JJJJJ":
+        if "J" in joker_hand and joker_hand != "JJJJJ":
             highest_card = sorted(Counter(joker_hand).items(), key=lambda x: x[1])
             if highest_card[-1][0] != "J":
                 joker_hand = joker_hand.replace("J", highest_card[-1][0])
