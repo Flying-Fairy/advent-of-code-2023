@@ -28,7 +28,6 @@ with open("inputs/input7.txt") as f:
         for key, value in card_score.items():
             hand = hand.replace(key, value)
         hand = list(map(int, hand.split()))
-        print(hand)
         
         hands_dict[hand_score].append((hand, int(bid)))
 
