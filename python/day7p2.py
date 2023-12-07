@@ -15,13 +15,12 @@ with open("inputs/input7.txt") as f:
             else:
                 joker_hand = joker_hand.replace("J", highest_card[-2][0])
       
-        hand_check = sorted(Counter(joker_hand).values())
+        hand_check = Counter(joker_hand).values()
         hand_score = len(hand_check)
         
-        if hand_score == 3 and hand_check[-1] == 2:
+        if hand_score == 3 and max(hand_check) == 2:
             hand_score = 3.1
-        
-        elif hand_score == 2 and hand_check[-1] == 3:
+        elif hand_score == 2 and max(hand_check) == 3:
             hand_score = 2.1
         
         hand = " ".join(hand)
