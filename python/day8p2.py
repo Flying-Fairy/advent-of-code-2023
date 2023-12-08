@@ -9,7 +9,6 @@ with open("inputs/input8.txt") as f:
         
         if line.endswith(("L", "R")):
             instructions = line 
-        
         elif "=" in line:
             line = line.split()
             node, directions = line[0], line[2:]
